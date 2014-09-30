@@ -11,6 +11,7 @@
 #import "YLWebViewController.h"
 #import "YLDownloader.h"
 #import "YLDownloaderManager.h"
+#import "YLLocationViewController.h"
 
 static NSDate *nowDate ;
 
@@ -79,6 +80,13 @@ static NSDate *nowDate ;
     nowDate = [NSDate date];
     self.urlStr = kDownloadLastestNewsUrl;
     [self downloadLastestNews];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"定位" forState:UIControlStateNormal];
+    button.frame = CGRectMake(0.0f, 0.0f, 44.0f, 44.0f);
+    [button addTarget:self action:@selector(buttonTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.rightBarButtonItem = buttonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -87,6 +95,12 @@ static NSDate *nowDate ;
     // Dispose of any resources that can be recreated.
 }
 #pragma mark - methods
+- (void)buttonTouchUpInside
+{
+    YLLocationViewController *lvc = [[YLLocationViewController alloc] init];
+    [self.navigationController pushViewController:lvc animated:YES];
+    
+}
 - (void)refreshTrigger:(UIRefreshControl *)rc
 {
     if (rc.isRefreshing) {
@@ -256,6 +270,7 @@ static NSDate *nowDate ;
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     YLWebViewController *wbvc = [[YLWebViewController alloc] init];
+    wbvc.hidesBottomBarWhenPushed = YES;
     wbvc.url = [self.newsListArray[indexPath.row] objectForKey:@"share_url"];
     [self.navigationController pushViewController:wbvc animated:YES];
 }

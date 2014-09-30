@@ -25,6 +25,9 @@
 		011C156C19C19B37002DC564 /* YLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011C156B19C19B37002DC564 /* YLBaseViewController.m */; };
 		011C157019C19CB0002DC564 /* YLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011C156E19C19CB0002DC564 /* YLFirstViewController.m */; };
 		011C157119C19CB0002DC564 /* YLFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011C156F19C19CB0002DC564 /* YLFirstViewController.xib */; };
+		0132D07E19D8E85300B4FB47 /* YLLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0132D07C19D8E85300B4FB47 /* YLLocationViewController.m */; };
+		0132D07F19D8E85300B4FB47 /* YLLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0132D07D19D8E85300B4FB47 /* YLLocationViewController.xib */; };
+		0132D08119D8ECF300B4FB47 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0132D08019D8ECF300B4FB47 /* MapKit.framework */; };
 		01396D4619C2D21F00171678 /* YLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01396D4419C2D21F00171678 /* YLWebViewController.m */; };
 		01396D4719C2D21F00171678 /* YLWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01396D4519C2D21F00171678 /* YLWebViewController.xib */; };
 		01396D4B19C2D81A00171678 /* YLSYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01396D4919C2D81A00171678 /* YLSYTableViewCell.m */; };
@@ -32,6 +35,8 @@
 		01396EDF19C2EE6E00171678 /* YLImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 01396EDE19C2EE6E00171678 /* YLImageDownloader.m */; };
 		015DC00A19C7E325004985AB /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 015DC00919C7E325004985AB /* default.png */; };
 		015DC00C19C7ED11004985AB /* top_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 015DC00B19C7ED11004985AB /* top_logo.png */; };
+		018824D219DA559300ADEA99 /* YLReverseLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 018824D119DA559300ADEA99 /* YLReverseLocation.m */; };
+		018824D419DA55C800ADEA99 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018824D319DA55C800ADEA99 /* CoreLocation.framework */; };
 		01AA022319C67D380084952D /* YLAsynImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA022219C67D380084952D /* YLAsynImageView.m */; };
 		01AA022619C692550084952D /* YLDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA022519C692550084952D /* YLDownloader.m */; };
 		01AA022919C6BE560084952D /* YLDownloaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA022819C6BE560084952D /* YLDownloaderManager.m */; };
@@ -71,6 +76,10 @@
 		011C156D19C19CB0002DC564 /* YLFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLFirstViewController.h; sourceTree = "<group>"; };
 		011C156E19C19CB0002DC564 /* YLFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLFirstViewController.m; sourceTree = "<group>"; };
 		011C156F19C19CB0002DC564 /* YLFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLFirstViewController.xib; sourceTree = "<group>"; };
+		0132D07B19D8E85300B4FB47 /* YLLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLocationViewController.h; sourceTree = "<group>"; };
+		0132D07C19D8E85300B4FB47 /* YLLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLLocationViewController.m; sourceTree = "<group>"; };
+		0132D07D19D8E85300B4FB47 /* YLLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLLocationViewController.xib; sourceTree = "<group>"; };
+		0132D08019D8ECF300B4FB47 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		01396D4319C2D21F00171678 /* YLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWebViewController.h; sourceTree = "<group>"; };
 		01396D4419C2D21F00171678 /* YLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWebViewController.m; sourceTree = "<group>"; };
 		01396D4519C2D21F00171678 /* YLWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLWebViewController.xib; sourceTree = "<group>"; };
@@ -81,6 +90,9 @@
 		01396EDE19C2EE6E00171678 /* YLImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLImageDownloader.m; sourceTree = "<group>"; };
 		015DC00919C7E325004985AB /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
 		015DC00B19C7ED11004985AB /* top_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_logo.png; sourceTree = "<group>"; };
+		018824D019DA559300ADEA99 /* YLReverseLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLReverseLocation.h; sourceTree = "<group>"; };
+		018824D119DA559300ADEA99 /* YLReverseLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLReverseLocation.m; sourceTree = "<group>"; };
+		018824D319DA55C800ADEA99 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		019BBA3919D7AEE3003D4BC4 /* myTest copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "myTest copy-Info.plist"; path = "/Users/Nick/Documents/workspace/myTest/myTest copy-Info.plist"; sourceTree = "<absolute>"; };
 		01AA022119C67D380084952D /* YLAsynImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAsynImageView.h; sourceTree = "<group>"; };
 		01AA022219C67D380084952D /* YLAsynImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAsynImageView.m; sourceTree = "<group>"; };
@@ -95,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018824D419DA55C800ADEA99 /* CoreLocation.framework in Frameworks */,
+				0132D08119D8ECF300B4FB47 /* MapKit.framework in Frameworks */,
 				011C153819C19A2F002DC564 /* CoreGraphics.framework in Frameworks */,
 				011C153C19C19A2F002DC564 /* CoreData.framework in Frameworks */,
 				011C153A19C19A2F002DC564 /* UIKit.framework in Frameworks */,
@@ -139,6 +153,8 @@
 		011C153419C19A2F002DC564 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				018824D319DA55C800ADEA99 /* CoreLocation.framework */,
+				0132D08019D8ECF300B4FB47 /* MapKit.framework */,
 				011C153519C19A2F002DC564 /* Foundation.framework */,
 				011C153719C19A2F002DC564 /* CoreGraphics.framework */,
 				011C153919C19A2F002DC564 /* UIKit.framework */,
@@ -170,6 +186,9 @@
 				01396D4319C2D21F00171678 /* YLWebViewController.h */,
 				01396D4419C2D21F00171678 /* YLWebViewController.m */,
 				01396D4519C2D21F00171678 /* YLWebViewController.xib */,
+				0132D07B19D8E85300B4FB47 /* YLLocationViewController.h */,
+				0132D07C19D8E85300B4FB47 /* YLLocationViewController.m */,
+				0132D07D19D8E85300B4FB47 /* YLLocationViewController.xib */,
 			);
 			path = myTest;
 			sourceTree = "<group>";
@@ -214,6 +233,8 @@
 				01AA022519C692550084952D /* YLDownloader.m */,
 				01AA022719C6BE560084952D /* YLDownloaderManager.h */,
 				01AA022819C6BE560084952D /* YLDownloaderManager.m */,
+				018824D019DA559300ADEA99 /* YLReverseLocation.h */,
+				018824D119DA559300ADEA99 /* YLReverseLocation.m */,
 			);
 			name = U;
 			sourceTree = "<group>";
@@ -297,6 +318,7 @@
 			files = (
 				015DC00C19C7ED11004985AB /* top_logo.png in Resources */,
 				01396D4C19C2D81A00171678 /* YLSYTableViewCell.xib in Resources */,
+				0132D07F19D8E85300B4FB47 /* YLLocationViewController.xib in Resources */,
 				011C154219C19A2F002DC564 /* InfoPlist.strings in Resources */,
 				011C154D19C19A2F002DC564 /* Images.xcassets in Resources */,
 				01396D4719C2D21F00171678 /* YLWebViewController.xib in Resources */,
@@ -326,7 +348,9 @@
 				011C154419C19A2F002DC564 /* main.m in Sources */,
 				011C157019C19CB0002DC564 /* YLFirstViewController.m in Sources */,
 				01AA022319C67D380084952D /* YLAsynImageView.m in Sources */,
+				0132D07E19D8E85300B4FB47 /* YLLocationViewController.m in Sources */,
 				01396D4B19C2D81A00171678 /* YLSYTableViewCell.m in Sources */,
+				018824D219DA559300ADEA99 /* YLReverseLocation.m in Sources */,
 				01396EDF19C2EE6E00171678 /* YLImageDownloader.m in Sources */,
 				01AA022619C692550084952D /* YLDownloader.m in Sources */,
 				011C154819C19A2F002DC564 /* YLAppDelegate.m in Sources */,
