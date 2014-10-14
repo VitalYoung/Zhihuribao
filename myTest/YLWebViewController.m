@@ -44,4 +44,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UIWebViewDelegate
+- (void)webViewDidFinishLoad:(UIWebView *)wv
+{
+    NSString *scriptRemoveBanner = @"document.getElementsByClassName('download-banner-v2')[0].remove()";
+    NSString *scriptRemoveRecommand = @"document.getElementsByClassName('bottom-recommend')[0].remove()";
+    NSString *scriptRemoveDownload = @"document.getElementsByClassName('new-download-banner')[0].remove()";
+    
+    [wv stringByEvaluatingJavaScriptFromString:scriptRemoveBanner];
+    [wv stringByEvaluatingJavaScriptFromString:scriptRemoveRecommand];
+    [wv stringByEvaluatingJavaScriptFromString:scriptRemoveDownload];
+}
 @end
